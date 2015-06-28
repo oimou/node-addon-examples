@@ -2,7 +2,10 @@
   "targets": [
     {
       "target_name": "hello",
-      "sources": [ "hello.cc" ]
+      "sources": [ "hello.cc" ],
+      "include_dirs": [
+        "<!(node -e \"require('nan')\")"
+      ]
     }
   ]
 }
